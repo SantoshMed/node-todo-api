@@ -1,3 +1,5 @@
+//http://mongodb.github.io/node-mongodb-native/3.0/api/
+
 // const MongoClient = require('mongodb').MongoClient;
 const {MongoClient, ObjectID} = require('mongodb'); // object destructuring of es6
 
@@ -11,7 +13,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
   // db.collection('Todos').findOneAndUpdate({
   //   _id: new ObjectID("5ad5bf0e816870b0e5bd3dfa")
   // },{
-  //   $set: { //mongodb update operators
+  //   $set: { //mongodb update operators(https://docs.mongodb.com/manual/reference/operator/update/)
   //     completed:true
   //   }
   // },{
